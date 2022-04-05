@@ -5,6 +5,7 @@
     <title>I Love You ❤️</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="./css/program.css">
     <style>
         html {
             height: 100%;
@@ -23,6 +24,7 @@
         a {
             color: #ebf7f4;
         }
+
 
         .body--ready {
             background: -webkit-linear-gradient(top, rgb(203, 235, 219) 0%, rgb(55, 148, 192) 120%);
@@ -91,14 +93,103 @@
             width: 100%;
             font-weight: bold;
         }
+       .button {
+	  display: inline-block;
+	  padding: 15px 25px;
+	  font-size: 24px;
+	  cursor: pointer;
+	  text-align: center;   
+	  text-decoration: none;
+	  outline: none;
+	  color: #fff;
+	  /*background-color: #4CAF50;*/
+	  background-color:#79a8ab;
+	  border: none;
+	  border-radius: 15px;
+	  box-shadow: 0 9px #999;
+	}
+
+	.button:hover {background-color:#79a8a3}
+
+	.button:active {
+	  /*background-color: #3e8e41;*/
+	  background-color:#79a8a3;
+	  box-shadow: 0 5px #666;
+	  transform: translateY(4px);
+	}
     </style>
 
 </head>
 
 <body>
 <div class="cs">
+	<!--
     <img src="images/pho1.png" id="logo">
+	-->
+    <div class="title">
+		一直会爱你哦 慧
+	</div>
+	<audio autoplay="autopaly" loop="loop" id="audios" preload="auto">
+		<source src="video/1.mp3" />
+	</audio>
+	<div class="cube">
+		<!-- 外层立方体 -->
+		<div class="outer-cube">
+			<div class="outer-top">
+				<img src="images/1.jpg" />
+			</div>
+			<div class="outer-bottom">
+				<img src="images/2.jpg" />
+			</div>
+			<div class="outer-front">
+				<img src="images/3.jpg" />
+			</div>
+			<div class="outer-back">
+				<img src="images/4.jpg" />
+			</div>
+			<div class="outer-left">
+				<img src="images/5.jpg" />
+			</div>
+			<div class="outer-right">
+				<img src="images/6.jpg" />
+			</div>
+		</div>
+		<!-- 内层立方体 -->
+		<div class="inner-cube">
+			<div class="inner-top">
+				<img src="images/01.jpg" />
+			</div>
+			<div class="inner-bottom">
+				<img src="images/02.jpg" />
+			</div>
+			<div class="inner-front">
+				<img src="images/03.jpg" />
+			</div>
+			<div class="inner-back">
+				<img src="images/04.jpg" />
+			</div>
+			<div class="inner-left">
+				<img src="images/05.jpg" />
+			</div>
+			<div class="inner-right">
+				<img src="images/06.jpg" />
+			</div>
+		</div>
+	</div>
 </div>
+<!-- <div>
+		<div class="message">
+			<div class="tip">
+				点击继续哦
+			</div>
+		</div>
+	</div> -->
+<div  style="position: absolute;right: 5px;bottom: 10px">
+	<a href="Awesome-Love-Code-main/Web/029-my_valentines_day/index.html">
+	<button class="button" >Continue</button>
+	</a>
+</div>
+<!-- <a href="#" class="next round">&#8250;</a> -->
 <canvas class="canvas" width="1820" height="905"></canvas>
 <p class="text" style="color: #ed3073;">
     We fell in love
@@ -127,12 +218,13 @@
     show_date_time();
 </script>
 <script>
-    var S = {
+    /*var S = {
         init: function () {
             S.Drawing.init('.canvas');
             document.body.classList.add('body--ready');
             //想说的话
             S.UI.simulate("覃慧|I'm|郁裕磊|I|Love|You|#countdown 3|#time");
+            S.UI.simulate("#countdown 9|#time");
             S.Drawing.loop(function () {
                 S.Shape.render();
             });
@@ -664,7 +756,7 @@
             }
         };
     }());
-    S.init();
+    S.init();*/
 </script>
 </body>
 </html>
