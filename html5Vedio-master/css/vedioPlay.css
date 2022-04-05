@@ -1,0 +1,156 @@
+body {
+	background: #ebebeb;
+}
+.topbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.topbox {
+	position: absolute;
+	width: 100%;
+}
+.lvyue {
+	float: left;
+}
+.downloadbox {
+	float: right;
+}
+.btn-download {
+	display: inline-block;
+    margin-right: .1rem;
+    width: .7rem;
+    height: .2rem;
+    color: #fff;
+    border-radius: .15rem;
+    background: #DE5757;
+    font-size: .9em;
+    line-height: 1.7em;
+    text-align: center;
+}
+.vedio-main {
+	position: relative;
+}
+.btn-control {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	line-height: 0;
+	border-width: 10px 0 10px 14px;
+	border-style: solid dashed dashed dashed;
+	border-left-color: #333;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	vertical-align: middle;
+}
+.btn-control-play {
+	display: inline-block;
+	width: 3px;
+	height: 15px;
+	line-height: 0;
+	border-width: 0 5px 0 5px;
+	border-style: dashed solid dashed solid;
+	border-left-color: #333;
+	border-top-color: transparent;
+	border-bottom-color: transparent;
+	border-right-color: #333;
+	vertical-align: middle;
+}
+.vedio-wrap {
+	background-color: #000;
+}
+.vedio-process {
+	position: absolute;
+	bottom: .4rem;
+	width: 100%;
+	background: #fff;
+}
+.vedio-precess-bar {
+	width: 100%;
+	height: .035rem;
+	background: gray;
+}
+.vedio-process-status {
+	position: absolute;
+	top: 0;
+	width: 0%;
+	height: .035rem;
+	background: #F85452;
+}
+.vedio-process-dot {
+	position: absolute;
+    top: -.03rem;
+    left: 0;
+    width: .1rem;
+    height: .1rem;
+    background: #F85452;
+    border-radius: 50%;
+    z-index: 999;
+}
+.vedio-ctrl {
+    position: absolute;
+    bottom: 0;
+    padding: 0 .1rem;
+    width: 100%;
+    height: .4rem;
+    line-height: .4rem;
+    background: #fff;
+}
+.vedio-ctrl .timeline {
+	margin-left: .07rem;
+}
+.vedio-ctrl .gray-text {
+	font-size: .9em;
+	color: gray;
+}
+.codebox {
+	background: 
+}
+.codebox .code-box {
+	display: -webkit-box; 
+	display: -webkit-flex; 
+	display: -ms-flexbox; 
+	display: flex;
+}
+.codebox .code-box .flex1 {
+	-webkit-box-flex: 1; 
+	-webkit-flex: 1; 
+	-ms-flex: 1; 
+	flex: 1;
+}
+.codebox .text {
+	height: .5rem;
+	text-align: center;
+	color: #626262;
+	line-height: .5rem;
+	vertical-align: sub;
+}
+.codebox .text span {
+	color: #fb4d00;
+}
+.codebox .codepic {
+	padding-bottom: .3rem;
+	padding-right: .2rem;
+    text-align: right;
+}
+.codebox .fingerpic {
+	padding-bottom: .3rem;
+	padding-left: .2rem;
+}
+.codebox .fingerpic img {
+	border: 1px solid #cecece;
+}
+.backtop {
+	margin-bottom: .3rem;
+	text-align: center;
+}
+.btn-backtop {
+	display: inline-block;
+	width: 1.55rem;
+	height: .28rem;
+	line-height: .28rem;
+	background-color: #797979;
+	color: #fff;
+	font-size: .8em;
+	border-radius: .15rem;
+}

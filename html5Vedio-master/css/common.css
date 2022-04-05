@@ -1,0 +1,332 @@
+/*general start*/
+body,p,blockquote,figure,hr,h1,h2,h3,h4,h5,h6,ul,menu,dir,ol,dl,dd,fieldset,input[type=radio],input[type=checkbox],input[type=range],pre,xmp,plaintext,listing {
+    margin: 0;
+}
+
+input[type=search],input[type=button],input[type=submit],input[type=reset]{
+   -webkit-appearance: none; 
+}
+
+cite,var,address,em {
+    font-style: normal;
+}
+
+strong {
+    font-weight: 400;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,iframe {
+    border: 0;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+li:hover{
+  cursor: pointer;
+}
+
+input,textarea,select,button {
+    font-family: inherit;
+    font-weight: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+select,button,input {
+    color: inherit;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+html {
+    font-size: 100px;
+}
+
+body {
+    font: 14px/1.5 Arial, "Microsoft Yahei";  /**字体大小 * 行边距 = 行高**/
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto !important;
+    color: #333;
+    position: relative;
+    overflow-x: hidden;
+  background: #fff;
+}
+
+a{
+    color: #333;
+}
+
+@media only all and (max-width: 640px) {
+    /* styles for iPhone/Android landscape (and really narrow browser windows) */
+    body,input,textarea{
+        font-size: 14px;
+    }
+}
+em {
+    font-style: normal;
+}
+.clearfix{
+    zoom:1;
+}
+.clearfix:after {
+    content: " ";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+header {
+    margin-top: .15rem;
+    margin-left: .15rem;
+}
+
+header img,
+header .title{
+    float: left;
+}
+
+header img {
+    border-radius: .15rem
+}
+
+@media only all and (max-width: 640px) {
+  header .title {
+    width: 2rem;
+  }
+}
+
+@media (device-height:480px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone4/4s */
+  header .title {
+    width: 2rem;
+  }
+}
+@media (device-height:568px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone5 */ 
+  header .title {
+    width: 2rem;
+  }
+}
+@media (device-height:667px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 */
+  header .title {
+    width: 2.5rem;
+  }
+}
+@media (device-height:736px) and (-webkit-min-device-pixel-ratio:2){/* 兼容iphone6 Plus */
+  header .title {
+    width: 3rem;
+  }
+}
+
+
+header .title {
+  margin-left: .15rem;
+}
+
+header .title h4 {
+    height: .3rem;
+    font-size: 1.5em;
+}
+
+header .title h4 {
+    font-weight: normal;
+}
+
+header .title p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1em;
+  color: #888;
+}
+
+header .title .img-star {
+    margin-top: .02rem;
+}
+
+nav {
+    margin-top: .15rem;
+    margin-bottom: .03rem;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    height: 40px;
+    margin: 0px 2% 15px 2%;
+    background: #ffde00;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.35em;
+    font-family: 宋体;
+    font-weight: bold;
+}
+
+.btn-dowm-top {
+    width: 96%;
+}
+
+.btn-dowm-bottom {
+    width: 81.56%;
+}
+
+.app-info {
+    background: #f4f4f4;
+    padding-top: 1px;
+}
+
+.blue-title {
+    height: .13rem;
+    line-height: .13rem;
+    padding-left: .04rem;
+    margin: .1rem .15rem 0 .15rem;
+    font-size: .13em;
+    border-left: 4px #0084ff solid;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.app-text {
+    font-size: .8em;
+    color: #888;
+    padding: .05rem .15rem;
+}
+footer {
+    padding: 10px 0px;
+    bottom: 0px;
+    z-index: 1;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+}
+
+/* swiper */
+.swiper-container {
+  width: 100%;
+  height: 330px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.swiper-container {
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 1;
+}
+
+.swiper-scrollbar {
+  border-radius: 10px;
+  position: relative;
+  -ms-touch-action: none;
+  background: rgba(0,0,0,0.1);
+}
+
+.swiper-scrollbar {
+  width: 100%;
+  height: 4px;
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  z-index: 1;
+}
+
+
+.swiper-scrollbar-cursor-drag {
+  cursor: move;
+}
+
+.swiper-scrollbar-drag {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background: rgba(0,0,0,0.5);
+  border-radius: 10px;
+}
+
+.swiper-free-mode > .swiper-wrapper {
+  -webkit-transition-timing-function: ease-out;
+  -moz-transition-timing-function: ease-out;
+  -ms-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  margin: 0 auto;
+}
+
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  -webkit-transition-property: -webkit-transform, left, top;
+  -webkit-transition-duration: 0s;
+  -webkit-transform: translate3d(0px,0,0);
+  -webkit-transition-timing-function: ease;
+  -moz-transition-property: -moz-transform, left, top;
+  -moz-transition-duration: 0s;
+  -moz-transform: translate3d(0px,0,0);
+  -moz-transition-timing-function: ease;
+  -o-transition-property: -o-transform, left, top;
+  -o-transition-duration: 0s;
+  -o-transform: translate3d(0px,0,0);
+  -o-transition-timing-function: ease;
+  -o-transform: translate(0px,0px);
+  -ms-transition-property: -ms-transform, left, top;
+  -ms-transition-duration: 0s;
+  -ms-transform: translate3d(0px,0,0);
+  -ms-transition-timing-function: ease;
+  transition-property: transform, left, top;
+  transition-duration: 0s;
+  transform: translate3d(0px,0,0);
+  transition-timing-function: ease;
+}
+
+.swiper-slide {
+  width: 950px;
+  padding: 5px;
+  background: #fff;
+}
+
+.swiper-slide {
+  float: left;
+}
+
+.swiper-photo {
+  width: 183px;
+  float: left;
+  margin-right: 5px;
+}
+.head {
+  padding-top: .1rem;
+  text-align: center;
+  background-color: #F7CE1C;
+}
+.md-text {
+  font-size: 1.3em;
+  color: #333;
+  font-weight: 700;
+}
+.lg-text {
+  font-size: 2em;
+}
+.red-text {
+  color: #DB4506;
+}
