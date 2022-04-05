@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>小覃同学</title>
+    <meta name="language" content="zh-CN">
+    <meta name="title" content="小覃同学">
+    <meta name="github" content="https://github.com/sun0225SUN/Awesome-Love-Code">
+    <meta name="describe" content="收集不易，您的star是我坚持的动力，同时也欢迎各位PR哦! ">
+    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png">
+    <link rel="icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/viewer.min.css">
+</head>
+
+<body>
+
+    <!-- ALL -->
+    <div id="Indexbox">
+
+        <!-- 顶部菜单 -->
+        <div class="menu" id="menu">
+            <img src="./favicon.ico" alt="favicon">
+            <ul id="menuUL">
+                <li>
+                    <a href="" target="_blank">首页(L)</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">文章(V)</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">归档(E)</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">知乎(X)</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">留言(J)</a>
+                </li>
+                <li>
+                    <a href="" target="_blank">关于(O)</a>
+                </li>
+            </ul>
+            
+        </div>
+
+        <!-- 左侧菜单按钮 -->
+        <div class="leftBar">
+            <div class="leftBar-ButtomMe" onclick="MeClick(true)"></div>
+            <div class="leftBar-ButtomMenu" id="leftBar-ButtomMenu" onclick="MenuClick(true)">
+                <div class="div1"></div>
+                <div class="div2"></div>
+                <div class="div3"></div>
+            </div>
+            <div class="leftBar-ButtomPages" id="menuPages" onclick="PagesClick(true)"></div>
+        </div>
+
+        <!-- 左侧拉出菜单 我 -->
+        <div class="leftBar-Me" id="leftBar-Me">
+            <div class="leftBar-ButtomClose" onclick="MeClick(false)">
+                <div class="div1"></div>
+                <div class="div2"></div>
+            </div>
+            <div class="img">
+                <img src="./images/1.jpg" alt="头像">
+            </div>
+            <div class="introduction">
+                <h1>小覃同学</h1>
+                <p>朔州市科技局科员。</p>
+                <p>即使前方的路看似绝境，也要有硬生生给自己开出一条路的勇气</p>
+            </div>
+            <div class="connect">
+                <a href="">关于</a>
+                <a href="">留言</a>
+            </div>
+        </div>
+
+        <!-- 页面版块1 -->
+        <div class="pages" id="pages">
+
+            <!-- 页面选项卡 -->
+            <div class="pages-title">
+                <div class="pages-title-option pages-title-option-click" id="pages-title-option1"
+                    onclick="pages_title_option_click(1, true)">
+                    <img src="./images/stuck_out_tongue.png" alt="stuck_out_tongue">
+                    <p>我们开始了.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option2" onclick="pages_title_option_click(2, true)">
+                    <img src="./images/stuck_out_tongue_closed_eyes.png" alt="stuck_out_tongue_closed_eyes">
+                    <p>过生日.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option3" onclick="pages_title_option_click(3, true)">
+                    <img src="./images/stuck_out_tongue_winking_eye.png" alt="stuck_out_tongue_winking_eye">
+                    <p>欢乐谷之行.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option4" onclick="pages_title_option_click(4, true)">
+                    <img src="./images/stuck_out_tongue_winking_eye.png" alt="stuck_out_tongue_winking_eye">
+                    <p>长城.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option5" onclick="pages_title_option_click(5, true)">
+                    <img src="./images/stuck_out_tongue_winking_eye.png" alt="stuck_out_tongue_winking_eye">
+                    <p>开始上班.md</p>
+                </div>
+                <div class="pages-title-option" id="pages-title-option6" onclick="pages_title_option_click(6, true)">
+                    <img src="./images/stuck_out_tongue_winking_eye.png" alt="stuck_out_tongue_winking_eye">
+                    <p>方特.md</p>
+                </div>
+            </div>
+
+            <!-- 页面 -->
+            <div class="pages-text pages-text-show" id="pages-text1">
+                <div class="pages-text-box">
+                    <h1>第一次牵手</h1>
+                    <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/3.jpg" />
+                    <!-- <p>&emsp;&emsp;一望无际的迷雾中，有人在寻找光明！很高兴遇到你，我们一直在耕耘这么一片简单的土壤，虽然没有尽善尽美，但以初见雏形。</p> -->
+                </div>
+            </div>
+
+            <div class="pages-text" id="pages-text2">
+                <div class="pages-text-box">
+                    <h1>第一次收到生日蛋糕</h1>
+                    <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/5.8.jpg" />
+
+                </div>
+            </div>
+
+            <div class="pages-text" id="pages-text3">
+                <div class="pages-text-box">
+                    <h1>一起坐过山车</h1>
+                    <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/4.jpg" />
+                </div>
+            </div>
+            <div class="pages-text" id="pages-text4">
+                <div class="pages-text-box">
+                    <h1>一起爬长城</h1>
+                    <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/04.jpg" />
+                </div>
+            </div>
+            <div class="pages-text" id="pages-text5">
+                <div class="pages-text-box">
+                    <h1>开始上班，很久见一次</h1>
+                    <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/121.jpg" />
+                        <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/125.jpg" />
+                        <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/1213.jpg" />
+                        <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/1224.jpg" />
+                        <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/1226.jpg" />
+                </div>
+            </div>
+            <div class="pages-text" id="pages-text6">
+                <div class="pages-text-box">
+                    <h1>一起去方特啦</h1>
+                    <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/261.jpg" />
+                        <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/262.jpg" />
+                        <img class="pages-text-box-img" align="center" width="700px"
+                        src="./images/263.jpg" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页面版块2 -->
+    <div class="pages pages2" id="pages2">
+
+        <!-- 页面选项卡 -->
+        <div class="pages-title pages-title2">
+            <div class="pages-title-option pages-title-option-click">
+                <img src="./images/icecream.png" alt="icecream">
+                <p>My Life.md</p>
+            </div>
+        </div>
+
+        <!-- 页面 -->
+        <div class="pages-text pages-text-show">
+            <div class="pages-text-box pages-text-box2">
+                <h1>我与她</h1>
+                <p>2022-05-02</p>
+                <p>故事开始</p>
+                <div class="pages-text-box-img">
+                    <img src="./images/love1.jpg" alt="love1" class="n0ts-img">
+                    <h6>我们的第一张合影</h6>
+                </div>
+                <a href="https://github.com/sun0225SUN/Awesome-Love-Code" class="text-a" target="_blank">More?</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 底部版权 -->
+    <div class="footer" id="footer">
+        <p class="left">&copy; 2021 | BY <a href="https://sunguoqi.com/" target="_blank">SUNSHINE</a></p>
+        <p class="right"><a href="http://sunguoqi.com/" target="_blank">I am your sunshine</a></p>
+    </div>
+
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+    <script src="./js/N0ts.js"></script>
+    <script src="./js/viewer.min.js"></script>
+    <script src="./js//lovetime.js"></script>
+    <script>resize();</script>
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta name="title" content="小孙同学">
+	<meta name="github" content="https://github.com/sun0225SUN/Awesome-Love-Code">
+	<meta name="describe" content="收集不易，您的star是我坚持的动力，同时也欢迎各位PR哦! ">
+	<link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/sun0225SUN/photos/img/20210715233345.png">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url('digital.ttf') format("truetype");
+		}
+		 .button {
+	  display: inline-block;
+	  padding: 15px 25px;
+	  font-size: 24px;
+	  cursor: pointer;
+	  text-align: center;   
+	  text-decoration: none;
+	  outline: none;
+	  color: #fff;
+	  /*background-color: #4CAF50;*/
+	  background-color:#79a8ab;
+	  border: none;
+	  border-radius: 15px;
+	  box-shadow: 0 9px #999;
+	}
+
+	.button:hover {background-color:#79a8a3}
+
+	.button:active {
+	  /*background-color: #3e8e41;*/
+	  background-color:#79a8a3;
+	  box-shadow: 0 5px #666;
+	  transform: translateY(4px);
+	}
+	</style>
+	<link href="css/default.css" type="text/css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<div id="mainDiv">
+		<div id="content">
+			<div id="code">
+				<span class="comments">##</span><br />
+				<span class="comments"># I am a programmer,</span><br />
+				<span class="comments"># so I write code to celebrate Valentine's Day in Our's way.</span><br />
+				<span class="comments">##</span><br />
+				i = Boy(<span class="string">"小郁同学"</span>);<br />
+				u = Girl(<span class="string">"小覃同学"</span>);<br />
+				<span class="comments"># 12 26, 2020, I meet you because of job-hunting. </span><br />
+				i.meet(u)<br />
+				<span class="comments"># Afterwards, I confessed to you. </span><br />
+				i.confess(u)<br />
+				<span class="comments"># 5 2, 2022, You became my girlfriend.</span><br />
+				u.accepted(i)<br />
+				<span class="comments"># Since then, we spent harmony happiness life every day.</span><br />
+				happy(u, i)<br />
+				<span class="comments"># We enjoy studying together.</span><br />
+				study(u, i)<br />
+				<span class="comments"># We enjoy cuisine together.</span><br />
+				dine(u, i)<br />
+				<span class="comments"># We enjoy appointment together.</span><br />
+				appoint(u, i)<br />
+				<span class="comments"># We enjoy vacation together.</span><br />
+				vacation(u, i)<br />
+				<span class="comments"># Sometimes there are a few conflicts between us.</span><br />
+				No conflict(u, i, sometimes=<span class="keyword">True</span>)<br />
+				<span class="comments"># And we are getting more and more in harmony together.</span><br />
+				u.in_harmony_with(i) <br />
+				i.in_harmony_with(u) <br />
+				<span class="comments"># You are the greatest love of my life.</span><br />
+				while <span class="keyword">True</span>:<br />
+				<span class="placeholder"></span><span class="keyword">if</span> u.with(i):<br />
+				<span class="placeholder"></span><span class="placeholder"></span>u = everything<br />
+				<span class="placeholder"></span><span class="keyword">else</span>:<br />
+				<span class="placeholder"></span><span class="placeholder"></span>everything = u<br />
+				<span class="comments"># Waiting me marries you, we will be the happiest couple in the
+					world.</span><br />
+				i.marry(u, in_the_future=<span class="keyword">True</span>)<br />
+				i.live_happily_forever_with(u)<br />
+				<span class="comments"># I love you forever.</span><br />
+			</div>
+			<div id="loveHeart">
+				<canvas id="garden"></canvas>
+				<div id="words">
+					<div id="messages">
+						TH, I have fallen in love with you for
+						<div id="elapseClock"></div>
+					</div>
+					<div id="loveu">
+						Love u forever and ever.<br />
+						<div class="signature"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div  style="position: absolute;right: 5px;bottom: 10px">
+	<a href="../../../result.html">
+	<button class="button" >Continue</button>
+	</a>
+		</div>
+		<div id="copyright">
+			Copyright © 2022 <a href='http://YYL.com'>YYL.com</a> 2021-2022
+		</div>
+	</div>
+	<script type="text/javascript">
+		var offsetX = $("#loveHeart").width() / 2;
+		var offsetY = $("#loveHeart").height() / 2 - 55;
+		var together = new Date();
+		// 此处月份介于 0 ~ 11 之间。用本地时间表示，如 8 月要用 7 表示。
+		together.setFullYear(2021, 4, 2);
+		together.setHours(10);
+		together.setMinutes(0);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+
+		if (!document.createElement('canvas').getContext) {
+			var msg = document.createElement("div");
+			msg.id = "errorMsg";
+			msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+			document.body.appendChild(msg);
+			$("#code").css("display", "none")
+			$("#copyright").css("position", "absolute");
+			$("#copyright").css("bottom", "10px");
+			document.execCommand("stop");
+		} else {
+			setTimeout(function () {
+				startHeartAnimation();
+			}, 5000);
+
+			timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+		}
+	</script>
+</body>
+
+</html>
